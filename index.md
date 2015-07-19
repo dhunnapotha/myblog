@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About Me
 ---
 
 # Hello, I'm Gautam Chandra
