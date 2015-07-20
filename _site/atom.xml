@@ -4,7 +4,7 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-07-21T00:35:39+05:30</updated>
+ <updated>2015-07-21T00:41:25+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
@@ -17,18 +17,14 @@
    <link href="/2015/07/20/Setting-up-custom-domain-blog-with-jekyll/"/>
    <updated>2015-07-20T00:00:00+05:30</updated>
    <id>/2015/07/20/Setting-up-custom-domain-blog-with-jekyll</id>
-   <content type="html">&lt;p&gt;I recently setup my &lt;a href=&quot;http://www.theox.in&quot;&gt;website + blog&lt;/a&gt; using Jekyll. Tried to capture the important information in this blog. I added some useful references at the bottom.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I recently setup this &lt;a href=&quot;http://www.theox.in&quot;&gt;website + blog&lt;/a&gt; using Jekyll. Tried to capture the important information in this blog. I added some useful references at the bottom.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This blog assumes that the reader has basic knowledge of Git repos, HTML &amp;amp; Markdown&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Install Jekyll
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;gem install jekyll&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Install Jekyll -&amp;gt; &lt;strong&gt;gem install jekyll&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;Following the instructions in jekyll website looked a bit complex to me. So, I would suggest you can skip it for now.&lt;/li&gt;
   &lt;li&gt;As a starting point, go to &lt;a href=&quot;http://chibicode.github.io/solo/&quot;&gt;Solo&lt;/a&gt;. Follow the instructions and play around with the content to get a feel of what Jekyll can do.&lt;/li&gt;
   &lt;li&gt;Next go to &lt;a href=&quot;http://joshualande.com/jekyll-github-pages-poole/&quot;&gt;this awesome blog&lt;/a&gt; and follow the instructions.&lt;/li&gt;
@@ -73,6 +69,7 @@ end
   &lt;li&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;http://jekyllrb.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://github.com/dhunnapotha/myblog&quot;&gt;&lt;img style=&quot;position: fixed; top: 0; left: 0; border: 0;&quot; src=&quot;https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67&quot; alt=&quot;Fork me on GitHub&quot; data-canonical-src=&quot;https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

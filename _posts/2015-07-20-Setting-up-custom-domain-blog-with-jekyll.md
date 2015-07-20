@@ -3,14 +3,13 @@ layout: post
 title: Setting up a custom domain website with Jekyll
 ---
 
-I recently setup my [website + blog](http://www.theox.in) using Jekyll. Tried to capture the important information in this blog. I added some useful references at the bottom.
+I recently setup this [website + blog](http://www.theox.in) using Jekyll. Tried to capture the important information in this blog. I added some useful references at the bottom.
 
 *This blog assumes that the reader has basic knowledge of Git repos, HTML & Markdown*
 
 ----
 
-1. Install Jekyll
-  * __gem install jekyll__
+1. Install Jekyll -> __gem install jekyll__
 2. Following the instructions in jekyll website looked a bit complex to me. So, I would suggest you can skip it for now.
 3. As a starting point, go to [Solo](http://chibicode.github.io/solo/). Follow the instructions and play around with the content to get a feel of what Jekyll can do.
 4. Next go to [this awesome blog](http://joshualande.com/jekyll-github-pages-poole/) and follow the instructions.
@@ -47,3 +46,4 @@ __This blog is built using the approach given above. You can get the source code
 * [http://jekyllrb.com/](http://jekyllrb.com/)
 
 
+<a href="https://github.com/dhunnapotha/myblog"><img style="position: fixed; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
