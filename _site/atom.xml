@@ -4,7 +4,7 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-07-20T23:15:03+05:30</updated>
+ <updated>2015-07-20T23:18:38+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
@@ -29,8 +29,7 @@
       &lt;li&gt;It should be flexible to customize.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;I tried several options out there and finally chose on &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. The solution takes advantage of Github Pages.&lt;/li&gt;
-  &lt;li&gt;Main reasons why I chose Jekyll being:
+  &lt;li&gt;I tried several options out there and finally chose on &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. The solution takes advantage of Github Pages. Main reasons why I chose Jekyll being:
     &lt;ul&gt;
       &lt;li&gt;I don’t have to pay anything extra and can have my custom domain for the website.&lt;/li&gt;
       &lt;li&gt;Since the webpage is nothing but Github page of a repo, adding a post means committing changes to Github repo, which means, increased activity of my Github profile - a boon for a consultant like me.&lt;/li&gt;
