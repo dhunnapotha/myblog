@@ -4,7 +4,7 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-07-21T00:41:25+05:30</updated>
+ <updated>2015-07-21T00:43:16+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
@@ -19,7 +19,7 @@
    <id>/2015/07/20/Setting-up-custom-domain-blog-with-jekyll</id>
    <content type="html">&lt;p&gt;I recently setup this &lt;a href=&quot;http://www.theox.in&quot;&gt;website + blog&lt;/a&gt; using Jekyll. Tried to capture the important information in this blog. I added some useful references at the bottom.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;This blog assumes that the reader has basic knowledge of Git repos, HTML &amp;amp; Markdown&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This blog assumes that the reader has basic knowledge of Git repos, HTML &amp;amp; Markdown.&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -32,15 +32,15 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;few-things-i-want-to-highlight&quot;&gt;Few things I want to highlight&lt;/h3&gt;
+&lt;h3 id=&quot;few-things-i-want-to-highlight&quot;&gt;Few things I want to highlight:&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Creating custom domain is pretty simple. Just follow these steps
+  &lt;li&gt;Creating custom domain is pretty simple. Just follow these steps:
     &lt;ol&gt;
-      &lt;li&gt;Create a file named CNAME, add the custom domain, you want to map this webpage to (in my case, it was www.theox.in)&lt;/li&gt;
-      &lt;li&gt;Go to your domain service provider (in my case, &lt;a href=&quot;http://godaddy.com&quot;&gt;godaddy&lt;/a&gt;) and add a CNAME record for &lt;strong&gt;www&lt;/strong&gt; subdomain to &lt;strong&gt;your-username&lt;/strong&gt;.github.io (in my case, it was &lt;strong&gt;dhunnapotha.github.io&lt;/strong&gt;)&lt;/li&gt;
+      &lt;li&gt;Create a file named CNAME, add the custom domain, you want to map this webpage to (in my case, it was www.theox.in).&lt;/li&gt;
+      &lt;li&gt;Go to your domain service provider (in my case, &lt;a href=&quot;http://godaddy.com&quot;&gt;godaddy&lt;/a&gt;) and add a CNAME record for &lt;strong&gt;www&lt;/strong&gt; subdomain to &lt;strong&gt;your-username&lt;/strong&gt;.github.io (in my case, it was &lt;strong&gt;dhunnapotha.github.io&lt;/strong&gt;).&lt;/li&gt;
     &lt;/ol&gt;
 
-    &lt;p&gt;&lt;em&gt;Please note that Github has pages for profiles and repositories. The instructions given above are for mapping custom domain to repository web pages. The instructions might slightly vary for profile pages. Please check &lt;a href=&quot;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/&quot;&gt;this&lt;/a&gt; for more details&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;em&gt;Please note that Github has pages for profiles and repositories. The instructions given above are for mapping custom domain to repository web pages. The instructions might slightly vary for profile pages. Please check &lt;a href=&quot;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/&quot;&gt;this&lt;/a&gt; for more details.&lt;/em&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;If you want to highlight code snippets with language formatting, use the below syntax (ruby, in the below example)&lt;/p&gt;
@@ -54,7 +54,7 @@ end
 
     &lt;p&gt;&lt;em&gt;Please find more details in the &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;code-snippet-highlighting&lt;/a&gt; section.&lt;/em&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;I added Follow Me buttons using &lt;a href=&quot;https://www.addthis.com/&quot;&gt;addthis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I added Follow Me buttons using &lt;a href=&quot;https://www.addthis.com/&quot;&gt;addthis&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;If you are starting with an already built jekyll theme, I would suggest you clone into a new repo instead of working with a forked repo, as commits done to forked repos do not get reflected in your github’s account acitivity.&lt;/li&gt;
 &lt;/ul&gt;
 
