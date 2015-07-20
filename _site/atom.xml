@@ -4,7 +4,7 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-07-21T00:43:16+05:30</updated>
+ <updated>2015-07-21T00:44:49+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
@@ -57,6 +57,8 @@ end
   &lt;li&gt;I added Follow Me buttons using &lt;a href=&quot;https://www.addthis.com/&quot;&gt;addthis&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;If you are starting with an already built jekyll theme, I would suggest you clone into a new repo instead of working with a forked repo, as commits done to forked repos do not get reflected in your github’s account acitivity.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;This blog is built using the approach given above. You can get the source code &lt;a href=&quot;https://github.com/dhunnapotha/myblog&quot;&gt;here&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 

@@ -34,6 +34,7 @@ I recently setup this [website + blog](http://www.theox.in) using Jekyll. Tried 
 * I added Follow Me buttons using [addthis](https://www.addthis.com/).
 * If you are starting with an already built jekyll theme, I would suggest you clone into a new repo instead of working with a forked repo, as commits done to forked repos do not get reflected in your github's account acitivity.
 
+----
 
 __This blog is built using the approach given above. You can get the source code [here](https://github.com/dhunnapotha/myblog).__
 
