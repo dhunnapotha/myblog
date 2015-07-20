@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Me
+title: RoR Consultant, Technolgy Enthusiast
 ---
 
 # Hello, I'm Gautam Chandra
