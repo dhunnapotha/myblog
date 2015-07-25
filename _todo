@@ -1,21 +1,72 @@
 
+-------------------- TO BLOG --------------------------
+
+Capistrano:
+- Talk about the problem I faced
+- gem 'capistrano-rails', '~> 1.1.1'
+
+markdown
+- bold, italic, headings
+- breakline
+
 sublime snippet
 
-update the CORS blog
-write a blog on working with different fields
 
 write a blog on how am trying to increase the google indexing score
 - title
 - meta descriptoin
 - search console!
 
+Capistrano
+- cap install
 
 
+-------------------- TO BLOG --------------------------
+
+
+
+-------------------- TO EXPLORE --------------------------
+
+What is developer program member?
 - Google rankings
 -> Sitemap
 -> target country
 
+web and app server 
 
-markdown
-- bold, italic, headings
-- 
+
+
+-------------------- TO EXPLORE --------------------------
+
+
+
+Capistrano
+How to read params from config file and deploy to the production file [Have a task for that!]
+How to configure ssh user and admin user information (just sudo should be enough)
+How do I restart a process?
+How to run 
+Where to add task files?
+
+Links:
+http://stackoverflow.com/questions/19071179/capistrano-how-to-put-files-at-the-shared-folder
+http://theadmin.org/articles/capistrano-variables/
+http://capistranorb.com/documentation/getting-started/flow/
+http://stackoverflow.com/questions/19363077/bundle-install-doesnt-work-from-capistrano
+
+Read more about rvms:
+
+
+How is the .delay being implemented
+How is the .before and .after implemented?
+
+has_ancestry 
+
+CSS:
+line height
+box size
+
+
+
+<%= javascript_include_tag "jquery.elevatezoom" %>
+
+-------------------- TO EXPLORE --------------------------
