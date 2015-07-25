@@ -1,16 +1,11 @@
 
 -------------------- TO BLOG --------------------------
 
-Capistrano:
-- Talk about the problem I faced
-- gem 'capistrano-rails', '~> 1.1.1'
-
 markdown
 - bold, italic, headings
 - breakline
 
 sublime snippet
-
 
 write a blog on how am trying to increase the google indexing score
 - title
@@ -39,14 +34,6 @@ web and app server
 -------------------- TO EXPLORE --------------------------
 
 
-
-Capistrano
-How to read params from config file and deploy to the production file [Have a task for that!]
-How to configure ssh user and admin user information (just sudo should be enough)
-How do I restart a process?
-How to run 
-Where to add task files?
-
 Links:
 
 Read more about rvms:
@@ -55,7 +42,6 @@ Read more about rvms:
 How is the .delay being implemented
 How is the .before and .after implemented?
 
-has_ancestry 
 
 CSS:
 line height
