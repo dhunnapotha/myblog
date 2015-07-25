@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Snippet to halt the filter chain
+comments: true
 ---
 
 returning false from a before_action filter doesn’t stop the filter chain. We should either render or redirect to prevent further filters in the chain to be executed.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CORS and finding the origin details
+comments: true
 ---
 
 When you allow access from different origins and if you would like to know from which origin the request is from, you can get that information in

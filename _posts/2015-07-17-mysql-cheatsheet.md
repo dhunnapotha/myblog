@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MySQL Cheatsheet
+comments: true
 ---
 
 __Creating a user__

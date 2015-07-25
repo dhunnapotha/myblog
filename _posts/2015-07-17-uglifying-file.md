@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Uglifying a file
+comments: true
 ---
 
 

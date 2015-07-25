@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pattern to load JS libraries asynchronously
+comments: true
 ---
 
 Sometimes, you want the external js files to be loaded asynchronously such that their loading time doesn’t impact the user experience of your site. For example, when you want to integrate google-analytics.

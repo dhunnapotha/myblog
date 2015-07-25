@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Post receive (server side) git hook
+comments: true
 ---
 
 On git repo hosting server, if an action has to be performed whenever someone pushes changes, we can place the script in post-receive git hook.

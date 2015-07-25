@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting up a free blog or a website with custom domain!
+comments: true
 ---
 
 I spent some time trying to figure the best and cheapest way to host my own website (+ blog). This post talks about few points of that journey.
