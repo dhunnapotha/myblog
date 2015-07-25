@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Setting up a custom domain website with Jekyll
-comments: true
 ---
 
 I recently setup this [website + blog](http://www.theox.in) using Jekyll. Tried to capture the important information in this blog. I added some useful references at the bottom.
