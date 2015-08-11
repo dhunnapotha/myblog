@@ -4,7 +4,7 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-08-11T22:44:07+05:30</updated>
+ <updated>2015-08-11T22:47:48+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
@@ -224,7 +224,7 @@ end
   &lt;li&gt;I tried several options out there and finally chose on &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. The solution takes advantage of Github Pages. Main reasons why I chose Jekyll being:
     &lt;ul&gt;
       &lt;li&gt;I don’t have to pay anything extra and can have my custom domain for the website.&lt;/li&gt;
-      &lt;li&gt;Since the webpage is nothing but Github page of a repo, adding a post means committing changes to Github repo, which means, increased activity of my Github profile - a boon for a consultant like me.&lt;/li&gt;
+      &lt;li&gt;Since the webpage is nothing but Github page of a repo, adding a post means committing changes to Github repo, which means, an apparent increase in my github activity - a boon for a consultant like me who is anyways blogging mostly on coding.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;I detailed the process of setting up the Jekyll website in this &lt;a href=&quot;http://localhost:4000/2015/07/20/Setting-up-custom-domain-blog-with-jekyll/&quot;&gt;post&lt;/a&gt;.&lt;/li&gt;
