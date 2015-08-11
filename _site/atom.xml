@@ -4,13 +4,29 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-07-25T20:19:26+05:30</updated>
+ <updated>2015-08-11T22:44:07+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
    <email>gautam4you@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Spaces between inline-block elements</title>
+   <link href="/2015/08/11/spaces-between-inline-block-elements/"/>
+   <updated>2015-08-11T00:00:00+05:30</updated>
+   <id>/2015/08/11/spaces-between-inline-block-elements</id>
+   <content type="html">&lt;p data-height=&quot;450&quot; data-theme-id=&quot;17774&quot; data-slug-hash=&quot;XbGwKm&quot; data-default-tab=&quot;result&quot; data-user=&quot;dhunnapotha&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/dhunnapotha/pen/XbGwKm/&quot;&gt;XbGwKm&lt;/a&gt; by Gautam Chandra Nadakuditi (&lt;a href=&quot;http://codepen.io/dhunnapotha&quot;&gt;@dhunnapotha&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;As depicted in the above pen, we need to be a bit careful while laying down the inline block elements. Any whitesepaces between two inline block elements result in a white space in the final output.&lt;/p&gt;
+
+&lt;p&gt;Either we can remove the whitespaces between them or we can float them to remove any whitespaces between them.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Kickstarting with Capistrano</title>

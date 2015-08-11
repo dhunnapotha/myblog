@@ -15,6 +15,9 @@ write a blog on how am trying to increase the google indexing score
 Capistrano
 - cap install
 
+Using a single menu for both mobile and desktop
+
+
 
 -------------------- TO BLOG --------------------------
 
@@ -29,6 +32,13 @@ What is developer program member?
 
 web and app server 
 
+In an accordion, if the hrefs are pointing to two obsects which are not part of the accordion, it doesn't hide automatically.. how to fix this??
+
+Why did that sticky menu dint work for the div that I was interested in?
+
+
+
+XSS
 
 
 -------------------- TO EXPLORE --------------------------
@@ -47,8 +57,14 @@ CSS:
 line height
 box size
 
-
+//pass json objects to the frontend -- how!!
 
 <%= javascript_include_tag "jquery.elevatezoom" %>
 
 -------------------- TO EXPLORE --------------------------
+debugging on hover stuff!
+
+
+---- Touched -----
+jquery cycle
+ellipsis
