@@ -7,13 +7,13 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Spaces between inline-block elements">
+  <meta name="description" content="Colorizing output strings">
   <meta name="robots" content="index,follow">
 
 
   <title>
     
-      Spaces between inline-block elements &middot; Gautam Chandra
+      Colorizing output strings &middot; Gautam Chandra
     
   </title>
 
@@ -66,16 +66,58 @@
 
       <main>
         <article class="post">
-  <h1 class="post-title">Spaces between inline-block elements</h1>
-  <time datetime="2015-08-11T00:00:00+05:30" class="post-date">11 Aug 2015</time>
-  <p data-height="450" data-theme-id="17774" data-slug-hash="XbGwKm" data-default-tab="result" data-user="dhunnapotha" class="codepen">See the Pen <a href="http://codepen.io/dhunnapotha/pen/XbGwKm/">XbGwKm</a> by Gautam Chandra Nadakuditi (<a href="http://codepen.io/dhunnapotha">@dhunnapotha</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+  <h1 class="post-title">Colorizing output strings</h1>
+  <time datetime="2015-11-19T00:00:00+05:30" class="post-date">19 Nov 2015</time>
+  <p>I was curious on how to colorize output (as is done in <a href="https://github.com/fazibear/colorize">colorize</a> gem). So, here is a brief info of my findings.</p>
 
-<hr />
-<p>As depicted in the above pen, we need to be a bit careful while laying down the inline block elements. Any whitesepaces between two inline block elements result in a white space in the final output.</p>
+<p>Any colorized string in general looks like the below</p>
 
-<p>Either we can remove the whitespaces between them or we can float them to remove any whitespaces between them.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="s2">&quot;</span><span class="se">\x1B</span><span class="s2">[n1;n2….m&lt;your text goes here&gt;</span><span class="se">\x1B</span><span class="s2">[0m&quot;</span></code></pre></div>
 
+<p>where </p>
+
+<ul>
+  <li>\x1B is an escape identifier to mark the beginning of colored string</li>
+  <li>n1, n2, n3 are numbered options separated by semicolons. The important numbered options are
+    <ul>
+      <li><strong>Color options</strong>
+        <ul>
+          <li>30-37 foreground colors</li>
+          <li>40-47 background colors
+            <ul>
+              <li>for eg:
+                <ul>
+                  <li>30 is foreground black, 40 is background black</li>
+                  <li>31 is foreground red, 41 is background red and so on..</li>
+                </ul>
+              </li>
+              <li>Get the complete list <a href="https://en.wikipedia.org/wiki/ANSI_escape_code#Colors">here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Other Styling Options</strong>
+        <ul>
+          <li>1 - bold</li>
+          <li>4 - underline</li>
+          <li>0 - default attributes</li>
+          <li>Get the entire list in SGR (Select Graphic Rendition) parameters section of the <a href="https://en.wikipedia.org/wiki/ANSI_escape_code">wiki</a>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>So, any text that follows <strong>\x1B[0m</strong> will have default attributes set because of 0.</p>
+
+<p>And to show you an example,</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">puts</span> <span class="err">“</span><span class="p">\</span><span class="n">x1B</span><span class="o">[</span><span class="mi">1</span><span class="p">;</span><span class="mi">32</span><span class="p">;</span><span class="mi">43</span><span class="p">;</span><span class="mi">4</span><span class="n">m</span> <span class="n">bold</span> <span class="n">green</span> <span class="n">on</span> <span class="n">yellow</span><span class="p">\</span><span class="n">x1B</span><span class="o">[</span><span class="mi">0</span><span class="n">mdefault</span> <span class="n">text</span><span class="err">”</span></code></pre></div>
+
+<p>results in 
+  <img src="/img/colorize-example.png" class="colorize_img2" /></p>
+
+<p>And just fyi, the same works with ‘printf’ on bash</p>
 
 </article>
 
@@ -86,9 +128,9 @@
     
       <li>
         <h3>
-          <a href="/2015/11/19/colorizing-console-outputs/">
-            Colorizing output strings
-            <small><time datetime="2015-11-19T00:00:00+05:30">19 Nov 2015</time></small>
+          <a href="/2015/08/11/spaces-between-inline-block-elements/">
+            Spaces between inline-block elements
+            <small><time datetime="2015-08-11T00:00:00+05:30">11 Aug 2015</time></small>
           </a>
         </h3>
       </li>

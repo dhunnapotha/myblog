@@ -17,6 +17,8 @@ Capistrano
 
 Using a single menu for both mobile and desktop
 
+lambda
+
 
 
 -------------------- TO BLOG --------------------------
@@ -60,6 +62,9 @@ box size
 //pass json objects to the frontend -- how!!
 
 <%= javascript_include_tag "jquery.elevatezoom" %>
+
+Think of the whole tags thingy!
+
 
 -------------------- TO EXPLORE --------------------------
 debugging on hover stuff!

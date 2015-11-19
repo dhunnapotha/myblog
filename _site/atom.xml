@@ -4,13 +4,71 @@
  <title>Gautam Chandra</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2015-08-11T22:47:48+05:30</updated>
+ <updated>2015-11-19T14:05:05+05:30</updated>
  <id></id>
  <author>
    <name>Gautam Chandra</name>
    <email>gautam4you@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Colorizing output strings</title>
+   <link href="/2015/11/19/colorizing-console-outputs/"/>
+   <updated>2015-11-19T00:00:00+05:30</updated>
+   <id>/2015/11/19/colorizing-console-outputs</id>
+   <content type="html">&lt;p&gt;I was curious on how to colorize output (as is done in &lt;a href=&quot;https://github.com/fazibear/colorize&quot;&gt;colorize&lt;/a&gt; gem). So, here is a brief info of my findings.&lt;/p&gt;
+
+&lt;p&gt;Any colorized string in general looks like the below&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\x1B&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[n1;n2….m&amp;lt;your text goes here&amp;gt;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\x1B&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;[0m&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;where &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\x1B is an escape identifier to mark the beginning of colored string&lt;/li&gt;
+  &lt;li&gt;n1, n2, n3 are numbered options separated by semicolons. The important numbered options are
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Color options&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;30-37 foreground colors&lt;/li&gt;
+          &lt;li&gt;40-47 background colors
+            &lt;ul&gt;
+              &lt;li&gt;for eg:
+                &lt;ul&gt;
+                  &lt;li&gt;30 is foreground black, 40 is background black&lt;/li&gt;
+                  &lt;li&gt;31 is foreground red, 41 is background red and so on..&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Get the complete list &lt;a href=&quot;https://en.wikipedia.org/wiki/ANSI_escape_code#Colors&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Other Styling Options&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;1 - bold&lt;/li&gt;
+          &lt;li&gt;4 - underline&lt;/li&gt;
+          &lt;li&gt;0 - default attributes&lt;/li&gt;
+          &lt;li&gt;Get the entire list in SGR (Select Graphic Rendition) parameters section of the &lt;a href=&quot;https://en.wikipedia.org/wiki/ANSI_escape_code&quot;&gt;wiki&lt;/a&gt;.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, any text that follows &lt;strong&gt;\x1B[0m&lt;/strong&gt; will have default attributes set because of 0.&lt;/p&gt;
+
+&lt;p&gt;And to show you an example,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bold&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;green&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yellow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mdefault&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;results in 
+  &lt;img src=&quot;/img/colorize-example.png&quot; class=&quot;colorize_img2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And just fyi, the same works with ‘printf’ on bash&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Spaces between inline-block elements</title>
