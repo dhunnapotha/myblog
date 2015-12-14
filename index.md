@@ -21,7 +21,7 @@ title: Ruby, Javascript, Rails & Chef Consultant, Software Architect, Co-Founder
 
 
 ### What I do these days
-* Ruby on Rails Consulting.
+* Consulting projects in Ruby, Javascript, Rails & Chef space.
 * Free gyan to early stage startups.
 * Blogging in free time although am pretty bad at that! I tweet more often.
 * Most of my experience has been in closed corporates. Now, focusing on OSS world.
