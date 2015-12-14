@@ -9,7 +9,8 @@ title: Ruby, Javascript, Rails & Chef Consultant, Software Architect, Co-Founder
 * Specialist in Rails, Ruby, Javascript & Chef.
 * I co-founded [Moontara](https://www.linkedin.com/company/moontara-technovations-pvt-ltd) which was operational for 2+ years.
 * 7+ years of experience in designing and developing applications in various fields, viz. Web Development, Infrastructure Automation, Embedded space and Voip Networking.
-* Started freelancing since May 2015 and thoroughly enjoying it :-)
+* I thoroughly enjoy building backend applications.
+* Started freelancing since May 2015 and it has been fantastic till now.
 
 
 #### Personal
@@ -25,5 +26,5 @@ title: Ruby, Javascript, Rails & Chef Consultant, Software Architect, Co-Founder
 * Blogging in free time although am pretty bad at that! I tweet more often.
 * Most of my experience has been in closed corporates. Now, focusing on OSS world.
 
-Still here? Feel free to reach me at [gautam4you@gmail.com](mailto:gautam4you@gmail.com).
+Still here?? Feel free to reach me at [gautam4you@gmail.com](mailto:gautam4you@gmail.com).
 
