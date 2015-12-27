@@ -11,6 +11,7 @@ title: Ruby, Javascript, Rails & Chef Consultant, Software Architect, Co-Founder
 * 7+ years of experience in designing and developing applications in various fields, viz. Web Development, Infrastructure Automation, Embedded space and Voip Networking.
 * I thoroughly enjoy building backend applications.
 * Started freelancing since May 2015 and it has been fantastic till now.
+* Resumes: [one pager](docs/bullzye.pdf), [cv](docs/cv-dec27-2019.pdf)
 
 
 #### Personal
