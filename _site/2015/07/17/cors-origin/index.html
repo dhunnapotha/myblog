@@ -70,19 +70,19 @@
   <time datetime="2015-07-17T00:00:00+05:30" class="post-date">17 Jul 2015</time>
   <p>When you allow access from different origins and if you would like to know from which origin the request is from, you can get that information in</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">[</span><span class="s2">&quot;origin&quot;</span><span class="o">]</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">request</span><span class="p">.</span><span class="nf">headers</span><span class="p">[</span><span class="s2">"origin"</span><span class="p">]</span></code></pre></figure>
 
 <p>Once you get the origin url, you can get the host information (i.e., without http scheme and www) using the below snippet</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#http://stackoverflow.com/questions/6674230/how-would-you-parse-a-url-in-ruby-to-get-the-main-domain</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#http://stackoverflow.com/questions/6674230/how-would-you-parse-a-url-in-ruby-to-get-the-main-domain</span>
  
-<span class="c1"># Only parses twice if url doesn&#39;t start with a scheme</span>
+<span class="c1"># Only parses twice if url doesn't start with a scheme</span>
 <span class="k">def</span> <span class="nf">get_host_without_www</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-  <span class="n">uri</span> <span class="o">=</span> <span class="no">URI</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-  <span class="n">uri</span> <span class="o">=</span> <span class="no">URI</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;http://</span><span class="si">#{</span><span class="n">url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">uri</span><span class="o">.</span><span class="n">scheme</span><span class="o">.</span><span class="n">nil?</span>
-  <span class="n">host</span> <span class="o">=</span> <span class="n">uri</span><span class="o">.</span><span class="n">host</span><span class="o">.</span><span class="n">downcase</span>
-  <span class="n">host</span><span class="o">.</span><span class="n">start_with?</span><span class="p">(</span><span class="s1">&#39;www.&#39;</span><span class="p">)</span> <span class="p">?</span> <span class="n">host</span><span class="o">[</span><span class="mi">4</span><span class="o">.</span><span class="n">.</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="p">:</span> <span class="n">host</span>
-<span class="k">end</span></code></pre></div>
+  <span class="n">uri</span> <span class="o">=</span> <span class="no">URI</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+  <span class="n">uri</span> <span class="o">=</span> <span class="no">URI</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="s2">"http://</span><span class="si">#{</span><span class="n">url</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="k">if</span> <span class="n">uri</span><span class="p">.</span><span class="nf">scheme</span><span class="p">.</span><span class="nf">nil?</span>
+  <span class="n">host</span> <span class="o">=</span> <span class="n">uri</span><span class="p">.</span><span class="nf">host</span><span class="p">.</span><span class="nf">downcase</span>
+  <span class="n">host</span><span class="p">.</span><span class="nf">start_with?</span><span class="p">(</span><span class="s1">'www.'</span><span class="p">)</span> <span class="p">?</span> <span class="n">host</span><span class="p">[</span><span class="mi">4</span><span class="p">.</span><span class="nf">.</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">:</span> <span class="n">host</span>
+<span class="k">end</span></code></pre></figure>
 
 </article>
 
@@ -146,7 +146,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2016-03-04T14:15:23+05:30">2016</time>. All rights reserved.
+          &copy; <time datetime="2016-06-02T15:26:39+05:30">2016</time>. All rights reserved.
         </small>
       </footer>
     </div>

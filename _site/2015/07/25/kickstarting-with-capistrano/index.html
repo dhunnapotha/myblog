@@ -83,15 +83,15 @@
 
 <h4 id="adding-capistrano-to-the-rails-project">Adding capistrano to the rails project</h4>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">&#39;capistrano-rails&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.1.1&#39;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">gem</span> <span class="s1">'capistrano-rails'</span><span class="p">,</span> <span class="s1">'~&gt; 1.1.1'</span></code></pre></figure>
 
 <p>and then</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">  bundle install</code></pre></figure>
 
 <p>and then</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">bundle <span class="nb">exec </span>cap install</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">  bundle <span class="nb">exec </span>cap install</code></pre></figure>
 
 <p>That will lay down the Capfile, deploy.rb (common config for all environments) and a sample config one for production and one for staging.</p>
 
@@ -99,27 +99,27 @@
 
 <p>Some variables I had to set in deploy.rb for the deployment to work</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s2">&quot;&lt;application_name&gt;&quot;</span>
-<span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s1">&#39;&lt;github_url&gt;&#39;</span>
-<span class="n">set</span> <span class="ss">:branch</span><span class="p">,</span> <span class="s1">&#39;&lt;github_branch_to_deploy&gt;&#39;</span>
-<span class="n">set</span> <span class="ss">:deploy_to</span><span class="p">,</span> <span class="s1">&#39;&lt;destination_directory_on_server&gt;&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">set</span> <span class="ss">:application</span><span class="p">,</span> <span class="s2">"&lt;application_name&gt;"</span>
+<span class="n">set</span> <span class="ss">:repo_url</span><span class="p">,</span> <span class="s1">'&lt;github_url&gt;'</span>
+<span class="n">set</span> <span class="ss">:branch</span><span class="p">,</span> <span class="s1">'&lt;github_branch_to_deploy&gt;'</span>
+<span class="n">set</span> <span class="ss">:deploy_to</span><span class="p">,</span> <span class="s1">'&lt;destination_directory_on_server&gt;'</span>
 
 <span class="c1"># Uncomment the below lines. You can read this http://capistranorb.com/documentation/getting-started/configuration/ for more details </span>
 
-<span class="n">set</span> <span class="ss">:linked_files</span><span class="p">,</span> <span class="n">fetch</span><span class="p">(</span><span class="ss">:linked_files</span><span class="p">,</span> <span class="o">[]</span><span class="p">)</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="s1">&#39;config/database.yml&#39;</span><span class="p">,</span> <span class="s1">&#39;config/secrets.yml&#39;</span><span class="p">)</span>
-<span class="n">set</span> <span class="ss">:linked_dirs</span><span class="p">,</span> <span class="n">fetch</span><span class="p">(</span><span class="ss">:linked_dirs</span><span class="p">,</span> <span class="o">[]</span><span class="p">)</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">,</span> <span class="s1">&#39;tmp/pids&#39;</span><span class="p">,</span> <span class="s1">&#39;tmp/cache&#39;</span><span class="p">,</span> <span class="s1">&#39;tmp/sockets&#39;</span><span class="p">,</span> <span class="s1">&#39;vendor/bundle&#39;</span><span class="p">,</span> <span class="s1">&#39;public/system&#39;</span><span class="p">)</span></code></pre></div>
+<span class="n">set</span> <span class="ss">:linked_files</span><span class="p">,</span> <span class="n">fetch</span><span class="p">(</span><span class="ss">:linked_files</span><span class="p">,</span> <span class="p">[]).</span><span class="nf">push</span><span class="p">(</span><span class="s1">'config/database.yml'</span><span class="p">,</span> <span class="s1">'config/secrets.yml'</span><span class="p">)</span>
+<span class="n">set</span> <span class="ss">:linked_dirs</span><span class="p">,</span> <span class="n">fetch</span><span class="p">(</span><span class="ss">:linked_dirs</span><span class="p">,</span> <span class="p">[]).</span><span class="nf">push</span><span class="p">(</span><span class="s1">'log'</span><span class="p">,</span> <span class="s1">'tmp/pids'</span><span class="p">,</span> <span class="s1">'tmp/cache'</span><span class="p">,</span> <span class="s1">'tmp/sockets'</span><span class="p">,</span> <span class="s1">'vendor/bundle'</span><span class="p">,</span> <span class="s1">'public/system'</span><span class="p">)</span></code></pre></figure>
 
 <p>The only variable I had to configure in staging.rb</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">server</span> <span class="s1">&#39;&lt;server-ip&gt;&#39;</span><span class="p">,</span> <span class="ss">user</span><span class="p">:</span> <span class="s1">&#39;&lt;deployment_user&gt;&#39;</span><span class="p">,</span> <span class="ss">roles</span><span class="p">:</span> <span class="sx">%w{app db web}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">server</span> <span class="s1">'&lt;server-ip&gt;'</span><span class="p">,</span> <span class="ss">user: </span><span class="s1">'&lt;deployment_user&gt;'</span><span class="p">,</span> <span class="ss">roles: </span><span class="sx">%w{app db web}</span></code></pre></figure>
 
 <h4 id="bundle-install-precompile-assets-db-migrations">Bundle install, Precompile Assets, DB Migrations</h4>
 
 <p>Open capfile and uncomment the below lines</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;capistrano/bundler&#39;</span>
-<span class="nb">require</span> <span class="s1">&#39;capistrano/rails/assets&#39;</span>
-<span class="nb">require</span> <span class="s1">&#39;capistrano/rails/migrations&#39;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'capistrano/bundler'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/rails/assets'</span>
+<span class="nb">require</span> <span class="s1">'capistrano/rails/migrations'</span></code></pre></figure>
 
 <p>They will take care of doing bundle install before the deployment process starts, precompiles assets and run db migrations as part of the deployment process.</p>
 
@@ -131,19 +131,20 @@
 
 <p>So, I wanted to automate that process. It was pretty simple.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">desc</span> <span class="s2">&quot;Restart server&quot;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">desc</span> <span class="s2">"Restart server"</span>
   <span class="n">task</span> <span class="ss">:restart_server</span> <span class="k">do</span>
     <span class="n">on</span> <span class="n">roles</span><span class="p">(</span><span class="ss">:all</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">host</span><span class="o">|</span>
-      <span class="n">pid_file</span> <span class="o">=</span> <span class="s2">&quot;&lt;path_to_pid&gt;&quot;</span>
+      <span class="n">pid_file</span> <span class="o">=</span> <span class="s2">"&lt;path_to_pid&gt;"</span>
       <span class="c1"># instead of manually restarting the process, we can send signals to the pid. Check out puma doc for more details.</span>
-      <span class="n">execute</span> <span class="s2">&quot;[ -f </span><span class="si">#{</span><span class="n">pid_file</span><span class="si">}</span><span class="s2"> ] &amp;&amp; kill -9 $(cat </span><span class="si">#{</span><span class="n">pid_file</span><span class="si">}</span><span class="s2">); true&quot;</span>
+      <span class="n">execute</span> <span class="s2">"[ -f </span><span class="si">#{</span><span class="n">pid_file</span><span class="si">}</span><span class="s2"> ] &amp;&amp; kill -9 $(cat </span><span class="si">#{</span><span class="n">pid_file</span><span class="si">}</span><span class="s2">); true"</span>
       <span class="n">within</span> <span class="n">current_path</span> <span class="k">do</span>
-        <span class="n">execute</span> <span class="ss">:bundle</span><span class="p">,</span> <span class="s2">&quot;exec puma -e </span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:stage</span><span class="p">)</span><span class="si">}</span><span class="s2"> -C &lt;puma_config_file&gt;&quot;</span>
+        <span class="n">execute</span> <span class="ss">:bundle</span><span class="p">,</span> <span class="s2">"exec puma -e </span><span class="si">#{</span><span class="n">fetch</span><span class="p">(</span><span class="ss">:stage</span><span class="p">)</span><span class="si">}</span><span class="s2"> -C &lt;puma_config_file&gt;"</span>
       <span class="k">end</span>
     <span class="k">end</span>
   <span class="k">end</span>
 
-<span class="n">after</span> <span class="s1">&#39;deploy:finished&#39;</span><span class="p">,</span> <span class="s1">&#39;restart_server&#39;</span></code></pre></div>
+<span class="n">after</span> <span class="s1">'deploy:finished'</span><span class="p">,</span> <span class="s1">'restart_server'</span>
+  </code></pre></figure>
 
 <p><strong>Caveat about executing commands on the server</strong>:</p>
 
@@ -154,8 +155,8 @@
 
 <p>Configuration changes I had to do:</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">set</span> <span class="ss">:rvm1_ruby_version</span><span class="p">,</span> <span class="s2">&quot;2.2.1&quot;</span> <span class="c1">#in deploy.rb</span>
-<span class="nb">require</span> <span class="s1">&#39;rvm1/capistrano3&#39;</span> <span class="c1">#in Capfile</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">set</span> <span class="ss">:rvm1_ruby_version</span><span class="p">,</span> <span class="s2">"2.2.1"</span> <span class="c1">#in deploy.rb</span>
+<span class="nb">require</span> <span class="s1">'rvm1/capistrano3'</span> <span class="c1">#in Capfile</span></code></pre></figure>
 
 <p>and done!!! 
 I was able to automate the deployment process.</p>
@@ -164,7 +165,7 @@ I was able to automate the deployment process.</p>
 
 <hr />
 
-<h3 id="some-more-references">Some more references</h3>
+<p>###Some more references</p>
 
 <ul>
   <li><a href="http://stackoverflow.com/questions/19071179/capistrano-how-to-put-files-at-the-shared-folder">http://stackoverflow.com/questions/19071179/capistrano-how-to-put-files-at-the-shared-folder</a></li>
@@ -236,7 +237,7 @@ I was able to automate the deployment process.</p>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2016-03-04T14:15:23+05:30">2016</time>. All rights reserved.
+          &copy; <time datetime="2016-06-02T15:26:39+05:30">2016</time>. All rights reserved.
         </small>
       </footer>
     </div>

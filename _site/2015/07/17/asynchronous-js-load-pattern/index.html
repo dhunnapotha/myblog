@@ -74,23 +74,23 @@
 
 <p>Below is the snippet Google Analytics give you to insert in your pages.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced</span>
  
-<span class="cm">/**</span>
-<span class="cm"> * Creates a temporary global ga object and loads analy  tics.js.</span>
-<span class="cm"> * Paramenters o, a, and m are all used internally.  They could have been declared using &#39;var&#39;,</span>
-<span class="cm"> * instead they are declared as parameters to save 4 bytes (&#39;var &#39;).</span>
-<span class="cm"> *</span>
-<span class="cm"> * @param {Window}      i The global context object.</span>
-<span class="cm"> * @param {Document}    s The DOM document object.</span>
-<span class="cm"> * @param {string}      o Must be &#39;script&#39;.</span>
-<span class="cm"> * @param {string}      g URL of the analytics.js script. Inherits protocol from page.</span>
-<span class="cm"> * @param {string}      r Global name of analytics object.  Defaults to &#39;ga&#39;.</span>
-<span class="cm"> * @param {DOMElement?} a Async script tag.</span>
-<span class="cm"> * @param {DOMElement?} m First script tag in document.</span>
-<span class="cm"> */</span>
+<span class="cm">/**
+ * Creates a temporary global ga object and loads analy  tics.js.
+ * Paramenters o, a, and m are all used internally.  They could have been declared using 'var',
+ * instead they are declared as parameters to save 4 bytes ('var ').
+ *
+ * @param {Window}      i The global context object.
+ * @param {Document}    s The DOM document object.
+ * @param {string}      o Must be 'script'.
+ * @param {string}      g URL of the analytics.js script. Inherits protocol from page.
+ * @param {string}      r Global name of analytics object.  Defaults to 'ga'.
+ * @param {DOMElement?} a Async script tag.
+ * @param {DOMElement?} m First script tag in document.
+ */</span>
 <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">o</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">m</span><span class="p">){</span>
-  <span class="nx">i</span><span class="p">[</span><span class="s1">&#39;GoogleAnalyticsObject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">r</span><span class="p">;</span> <span class="c1">// Acts as a pointer to support renaming.</span>
+  <span class="nx">i</span><span class="p">[</span><span class="s1">'GoogleAnalyticsObject'</span><span class="p">]</span> <span class="o">=</span> <span class="nx">r</span><span class="p">;</span> <span class="c1">// Acts as a pointer to support renaming.</span>
  
   <span class="c1">// Creates an initial ga() function.  The queued commands will be executed once analytics.js loads.</span>
   <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span> <span class="o">=</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span> <span class="o">||</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -107,12 +107,12 @@
   <span class="nx">a</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
   <span class="nx">a</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">g</span><span class="p">;</span>
   <span class="nx">m</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">m</span><span class="p">)</span>
-<span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;//www.google-analytics.com/analytics.js&#39;</span><span class="p">,</span> <span class="s1">&#39;ga&#39;</span><span class="p">);</span>
+<span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">'script'</span><span class="p">,</span> <span class="s1">'//www.google-analytics.com/analytics.js'</span><span class="p">,</span> <span class="s1">'ga'</span><span class="p">);</span>
  
-<span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-XXXX-Y&#39;</span><span class="p">,</span> <span class="s1">&#39;auto&#39;</span><span class="p">);</span> <span class="c1">// Creates the tracker with default parameters.</span>
-<span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">,</span> <span class="s1">&#39;pageview&#39;</span><span class="p">);</span>            <span class="c1">// Sends a pageview hit.</span>
+<span class="nx">ga</span><span class="p">(</span><span class="s1">'create'</span><span class="p">,</span> <span class="s1">'UA-XXXX-Y'</span><span class="p">,</span> <span class="s1">'auto'</span><span class="p">);</span> <span class="c1">// Creates the tracker with default parameters.</span>
+<span class="nx">ga</span><span class="p">(</span><span class="s1">'send'</span><span class="p">,</span> <span class="s1">'pageview'</span><span class="p">);</span>            <span class="c1">// Sends a pageview hit.</span>
  
-<span class="c1">// The other part is in https://gist.github.com/dhunnapotha/5c46a93eeec8239a9e68</span></code></pre></div>
+<span class="c1">// The other part is in https://gist.github.com/dhunnapotha/5c46a93eeec8239a9e68</span></code></pre></figure>
 
 <p>You should notice 3 important points here:</p>
 
@@ -131,8 +131,8 @@
 
 <p>A sample snippet can look like this</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-  <span class="kd">var</span> <span class="nx">handler</span> <span class="o">=</span> <span class="nb">window</span><span class="p">[</span><span class="s1">&#39;GoogleAnalyticsObject&#39;</span><span class="p">]</span> <span class="o">||</span> <span class="s1">&#39;ga&#39;</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">handler</span> <span class="o">=</span> <span class="nb">window</span><span class="p">[</span><span class="s1">'GoogleAnalyticsObject'</span><span class="p">]</span> <span class="o">||</span> <span class="s1">'ga'</span><span class="p">;</span>
   <span class="kd">var</span> <span class="nx">queue</span><span class="p">;</span>
   <span class="k">if</span><span class="p">(</span><span class="nb">window</span><span class="p">[</span><span class="nx">handler</span><span class="p">])</span>
     <span class="nx">queue</span> <span class="o">=</span> <span class="nb">window</span><span class="p">[</span><span class="nx">handler</span><span class="p">].</span><span class="nx">q</span><span class="p">;</span>
@@ -144,7 +144,7 @@
     <span class="nx">GoogleAnalytics</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">GoogleAnalytics</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
   <span class="p">}</span>
   <span class="nb">window</span><span class="p">[</span><span class="nx">handler</span><span class="p">]</span> <span class="o">=</span> <span class="nx">GoogleAnalytics</span><span class="p">;</span>
-<span class="p">})();</span></code></pre></div>
+<span class="p">})();</span></code></pre></figure>
 
 
 </article>
@@ -209,7 +209,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2016-03-04T14:15:23+05:30">2016</time>. All rights reserved.
+          &copy; <time datetime="2016-06-02T15:26:39+05:30">2016</time>. All rights reserved.
         </small>
       </footer>
     </div>
